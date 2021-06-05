@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div>
+        <div id="head"><b>THE MOVIE DB</b></div>
+        <div class="topbar"></div>
+    </div>
+    <div id="menu" class="menu">
+        <div class="tab" onclick="goToHomePage()" id="homeTab" style="color: #AC261C">&nbsp;&nbspHome&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8594;</div>
+        <div class="tab" onclick="goToSearchPage()" id="searchTab">&nbsp;&nbspSearch&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8594;</div>
+    </div>
+
+    <div id="home">
+        <p style="text-align: center; font-size: 16px; color: white">Trending movies</p>
+        <div class="movie" id="mov1">
+            <img id="movp1">
+            <span id="movt1"></span>
+        </div>
+        <div class="movie" id="mov2">
+            <img id="movp2">
+            <span id="movt2"></span>
+        </div>
+        <div class="movie" id="mov3">
+            <img id="movp3">
+            <span id="movt3"></span>
+        </div>
+        <div class="movie" id="mov4">
+            <img id="movp4">
+            <span id="movt4"></span>
+        </div>
+        <div class="movie" id="mov5">
+            <img id="movp5">
+            <span id="movt5"></span>
+        </div>
+
+        <p style="text-align: center; font-size: 16px; color: white; position: absolute; left: 720px; top: 550px">TV Shows On-Air Today</p>
+        <div class="movie" id="tv1" style="top: 600px">
+            <img id="tvp1">
+            <span id="tvt1"></span>
+        </div>
+        <div class="movie" id="tv2" style="top: 600px">
+            <img id="tvp2">
+            <span id="tvt2"></span>
+        </div>
+        <div class="movie" id="tv3" style="top: 600px">
+            <img id="tvp3">
+            <span id="tvt3"></span>
+        </div>
+        <div class="movie" id="tv4" style="top: 600px">
+            <img id="tvp4">
+            <span id="tvt4"></span>
+        </div>
+        <div class="movie" id="tv5" style="top: 600px">
+            <img id="tvp5">
+            <span id="tvt5"></span>
+        </div>
+        <div class="bottombar" style="position: absolute; display: block">
+            <p>Designed and developed by Peiye Liu<br>Powered by TMDB</p>
+        </div>
+
+
+    </div>
+    <div id="search" style="display: none">
+        <div id="searchPanel">
+            <p style="color: white; text-align: center; font-size: 18px"><b>Search</b></p>
+            <form id="form" action="#" onsubmit="getdata(); return false">
+                <p><span style="color: white; alignment: left; margin-left: 250px;">&nbsp;Keyword</span><span style="color: #AC261C; font-weight: bold; font-size: 20px">*&nbsp;&nbsp;</span><input id="kwd" style="width: 350px" type="text" name="keyword"></p>
+                <p><span style="color: white; alignment: left; margin-left: 250px;">Category</span><span style="color: #AC261C; font-weight: bold; font-size: 20px">*&nbsp;&nbsp;</span><select id="opt" name="opt">
+                    <option value="blank"></option>
+                    <option value="movie">Movies</option>
+                    <option value="tv">TV Shows</option>
+                    <option value="movietv">Movies and TV Shows</option>
+                </select></p>
+                <p style="text-align: center">
+                <button class="searchButton" type="submit" >Search</button>
+                <button class="searchButton" style="margin-left: 40px" type="reset" onclick="hidediv()">Clear</button>
+                </p>
+            </form>
+        </div>
+        <div id="searchStatus" style="display: none">Showing results..</div>
+        <div id="searchResult" style="display: none">
+
+        </div>
+
+        <div id="bottombar" class="bottombar" style="position: absolute; display: block">
+            <p>Designed and developed by Peiye Liu<br>Powered by TMDB</p>
+        </div>
+
+    </div>
+</body>
+<script src="js/script.js"></script>
+</html>
