@@ -1,5 +1,3 @@
-//moviesearcher7d8s5f0p.azurewebsites.net
-
 function index(){
     const xhr = new XMLHttpRequest();
     xhr.open('GET', '/index', true);//method url

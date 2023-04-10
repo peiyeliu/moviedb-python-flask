@@ -1,0 +1,10 @@
+# MAC OS
+.DS_Store
+
+# IDE
+.idea
+.vscode
+
+# python environment
+venv
+__pycache__

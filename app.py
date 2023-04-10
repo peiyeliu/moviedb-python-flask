@@ -4,7 +4,9 @@ import requests
 app = Flask(__name__, static_url_path='')
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 
-api_key = "YOUR_TMDB_API_KEY"
+# your api key should be defined here
+api_key = "your_api_key"
+
 head = "https://www.themoviedb.org/t/p"
 movie_genre_list = {}
 tv_genre_list = {}
